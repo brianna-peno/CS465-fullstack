@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from "@angular/forms"; 
 import { Router } from "@angular/router"; 
-import { TripData } from '../services/trip-data'; 
+import { TripDataService } from '../services/trip-data'; 
  
 @Component({ 
   selector: 'app-add-trip', 
@@ -19,7 +19,7 @@ export class AddTripComponent implements OnInit {
  constructor( 
    private formBuilder: FormBuilder, 
    private router: Router, 
-   private tripService: TripData 
+   private tripService: TripDataService
  ) { } 
  
  ngOnInit() { 

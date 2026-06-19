@@ -15,7 +15,8 @@
     </p>
 
     <p class="card-text" [innerHTML]="trip.description"></p>
-
+    <div *ngIf="isLoggedIn()">
     <button (click)="editTrip(trip)" class="btn btn-primary">Edit Trip</button>
   </div>
+</div>
 </div>
